@@ -1,5 +1,34 @@
-$bg-color: blue;
-
 body {
-    background: #000;
+    background: #fff;
+}
+
+#intro {
+	.intro {
+		background-image: url(/src/assets/timor-leste-coastline.jpg);
+		background-size: cover;
+		background-position: center;
+		padding-top: 150px;
+		padding-bottom: 150px;
+		text-align: center;
+
+		h1 {
+			background-color: rgba(0, 0, 0, .8);
+			color: #fff;
+			padding-top: 16px;
+			padding-bottom: 16px;
+			text-transform: uppercase;
+		}
+	}
+}
+
+#about {
+	.about {
+		padding-top: 32px;
+		padding-bottom: 32px;
+		
+		#map {
+			width: 100%;
+			height: 100vh;
+		}
+	}
 }
