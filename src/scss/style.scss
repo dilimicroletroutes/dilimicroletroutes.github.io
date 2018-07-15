@@ -21,10 +21,23 @@ body {
 	}
 }
 
+#navbar {
+	ul {
+		padding-top: 8px;
+		padding-bottom: 8px;
+		border-bottom: 1px solid #ccc;
+
+		li {
+			display: inline-block;
+			padding: 4px;
+		}
+	}
+}
+
 #about {
 	.about {
-		padding-top: 32px;
-		padding-bottom: 32px;
+		padding-top: 8px;
+		padding-bottom: 8px;
 		
 		#map {
 			width: 100%;
