@@ -52,8 +52,7 @@
                         <div id="map">
                         </div>
                         <script src="/map/js/qgis2web_expressions.js"></script>
-                        <script src="/map/js/leaflet.js"></script>
-                        <script src="/map/js/L.Control.Locate.min.js"></script>
+                        <script src="/map/js/leaflet.js"></script><script src="/map/js/L.Control.Locate.min.js"></script>
                         <script src="/map/js/leaflet.rotatedMarker.js"></script>
                         <script src="/map/js/leaflet.pattern.js"></script>
                         <script src="/map/js/leaflet-hash.js"></script>
@@ -62,18 +61,18 @@
                         <script src="/map/js/labelgun.min.js"></script>
                         <script src="/map/js/labels.js"></script>
                         <script src="/map/js/Control.OSMGeocoder.js"></script>
-                        <script src="/map/data/Microlet12_0.js"></script>
-                        <script src="/map/data/Microlet11_1.js"></script>
-                        <script src="/map/data/Microlet10_2.js"></script>
-                        <script src="/map/data/Microlet9_3.js"></script>
-                        <script src="/map/data/Microlet8_4.js"></script>
-                        <script src="/map/data/Microlet7_5.js"></script>
-                        <script src="/map/data/Microlet6_6.js"></script>
-                        <script src="/map/data/Microlet5_7.js"></script>
-                        <script src="/map/data/Microlet4_8.js"></script>
-                        <script src="/map/data/Microlet3_9.js"></script>
-                        <script src="/map/data/Microlet2_10.js"></script>
-                        <script src="/map/data/Microlet1_11.js"></script>
+                        <script src="/map/data/12_0.js"></script>
+                        <script src="/map/data/11_1.js"></script>
+                        <script src="/map/data/10_2.js"></script>
+                        <script src="/map/data/9_3.js"></script>
+                        <script src="/map/data/8_4.js"></script>
+                        <script src="/map/data/7_5.js"></script>
+                        <script src="/map/data/6_6.js"></script>
+                        <script src="/map/data/5_7.js"></script>
+                        <script src="/map/data/4_8.js"></script>
+                        <script src="/map/data/3_9.js"></script>
+                        <script src="/map/data/2_10.js"></script>
+                        <script src="/map/data/1_11.js"></script>
                         <script>
                             var highlightLayer;
                             function highlightFeature(e) {
@@ -92,7 +91,7 @@
                           }
                           var map = L.map('map', {
                             zoomControl:true, maxZoom:28, minZoom:1
-                        }).fitBounds([[-8.59569580176,125.488169548],[-8.52649312198,125.605143824]]);
+                        }).fitBounds([[-8.58054776808,125.523253867],[-8.51991685765,125.617478023]]);
                           var hash = new L.Hash(map);
                           map.attributionControl.addAttribution('<a href="https://github.com/tomchadwin/qgis2web" target="_blank">qgis2web</a>');
                           L.control.locate().addTo(map);
@@ -103,9 +102,8 @@
                         });
                           basemap0.addTo(map);
                           function setBounds() {
-                            map.setMaxBounds(map.getBounds());
-                        }
-                        function pop_Microlet12_0(feature, layer) {
+                          }
+                          function pop_12_0(feature, layer) {
                             layer.on({
                                 mouseout: function(e) {
                                     for (i in e.target._eventParents) {
@@ -152,9 +150,9 @@
                             layer.bindPopup(popupContent, {maxHeight: 400});
                         }
 
-                        function style_Microlet12_0_0() {
+                        function style_12_0_0() {
                             return {
-                                pane: 'pane_Microlet12_0',
+                                pane: 'pane_12_0',
                                 opacity: 1,
                                 color: 'rgba(55,164,219,1.0)',
                                 dashArray: '',
@@ -164,18 +162,18 @@
                                 fillOpacity: 0,
                             }
                         }
-                        map.createPane('pane_Microlet12_0');
-                        map.getPane('pane_Microlet12_0').style.zIndex = 400;
-                        map.getPane('pane_Microlet12_0').style['mix-blend-mode'] = 'normal';
-                        var layer_Microlet12_0 = new L.geoJson(json_Microlet12_0, {
+                        map.createPane('pane_12_0');
+                        map.getPane('pane_12_0').style.zIndex = 400;
+                        map.getPane('pane_12_0').style['mix-blend-mode'] = 'normal';
+                        var layer_12_0 = new L.geoJson(json_12_0, {
                             attribution: '<a href=""></a>',
-                            pane: 'pane_Microlet12_0',
-                            onEachFeature: pop_Microlet12_0,
-                            style: style_Microlet12_0_0,
+                            pane: 'pane_12_0',
+                            onEachFeature: pop_12_0,
+                            style: style_12_0_0,
                         });
-                        bounds_group.addLayer(layer_Microlet12_0);
-                        map.addLayer(layer_Microlet12_0);
-                        function pop_Microlet11_1(feature, layer) {
+                        bounds_group.addLayer(layer_12_0);
+                        map.addLayer(layer_12_0);
+                        function pop_11_1(feature, layer) {
                             layer.on({
                                 mouseout: function(e) {
                                     for (i in e.target._eventParents) {
@@ -222,9 +220,9 @@
                             layer.bindPopup(popupContent, {maxHeight: 400});
                         }
 
-                        function style_Microlet11_1_0() {
+                        function style_11_1_0() {
                             return {
-                                pane: 'pane_Microlet11_1',
+                                pane: 'pane_11_1',
                                 opacity: 1,
                                 color: 'rgba(31,185,180,1.0)',
                                 dashArray: '',
@@ -234,18 +232,18 @@
                                 fillOpacity: 0,
                             }
                         }
-                        map.createPane('pane_Microlet11_1');
-                        map.getPane('pane_Microlet11_1').style.zIndex = 401;
-                        map.getPane('pane_Microlet11_1').style['mix-blend-mode'] = 'normal';
-                        var layer_Microlet11_1 = new L.geoJson(json_Microlet11_1, {
+                        map.createPane('pane_11_1');
+                        map.getPane('pane_11_1').style.zIndex = 401;
+                        map.getPane('pane_11_1').style['mix-blend-mode'] = 'normal';
+                        var layer_11_1 = new L.geoJson(json_11_1, {
                             attribution: '<a href=""></a>',
-                            pane: 'pane_Microlet11_1',
-                            onEachFeature: pop_Microlet11_1,
-                            style: style_Microlet11_1_0,
+                            pane: 'pane_11_1',
+                            onEachFeature: pop_11_1,
+                            style: style_11_1_0,
                         });
-                        bounds_group.addLayer(layer_Microlet11_1);
-                        map.addLayer(layer_Microlet11_1);
-                        function pop_Microlet10_2(feature, layer) {
+                        bounds_group.addLayer(layer_11_1);
+                        map.addLayer(layer_11_1);
+                        function pop_10_2(feature, layer) {
                             layer.on({
                                 mouseout: function(e) {
                                     for (i in e.target._eventParents) {
@@ -292,9 +290,9 @@
                             layer.bindPopup(popupContent, {maxHeight: 400});
                         }
 
-                        function style_Microlet10_2_0() {
+                        function style_10_2_0() {
                             return {
-                                pane: 'pane_Microlet10_2',
+                                pane: 'pane_10_2',
                                 opacity: 1,
                                 color: 'rgba(255,255,255,1.0)',
                                 dashArray: '',
@@ -304,18 +302,18 @@
                                 fillOpacity: 0,
                             }
                         }
-                        map.createPane('pane_Microlet10_2');
-                        map.getPane('pane_Microlet10_2').style.zIndex = 402;
-                        map.getPane('pane_Microlet10_2').style['mix-blend-mode'] = 'normal';
-                        var layer_Microlet10_2 = new L.geoJson(json_Microlet10_2, {
+                        map.createPane('pane_10_2');
+                        map.getPane('pane_10_2').style.zIndex = 402;
+                        map.getPane('pane_10_2').style['mix-blend-mode'] = 'normal';
+                        var layer_10_2 = new L.geoJson(json_10_2, {
                             attribution: '<a href=""></a>',
-                            pane: 'pane_Microlet10_2',
-                            onEachFeature: pop_Microlet10_2,
-                            style: style_Microlet10_2_0,
+                            pane: 'pane_10_2',
+                            onEachFeature: pop_10_2,
+                            style: style_10_2_0,
                         });
-                        bounds_group.addLayer(layer_Microlet10_2);
-                        map.addLayer(layer_Microlet10_2);
-                        function pop_Microlet9_3(feature, layer) {
+                        bounds_group.addLayer(layer_10_2);
+                        map.addLayer(layer_10_2);
+                        function pop_9_3(feature, layer) {
                             layer.on({
                                 mouseout: function(e) {
                                     for (i in e.target._eventParents) {
@@ -362,9 +360,9 @@
                             layer.bindPopup(popupContent, {maxHeight: 400});
                         }
 
-                        function style_Microlet9_3_0() {
+                        function style_9_3_0() {
                             return {
-                                pane: 'pane_Microlet9_3',
+                                pane: 'pane_9_3',
                                 opacity: 1,
                                 color: 'rgba(87,169,206,1.0)',
                                 dashArray: '',
@@ -374,18 +372,18 @@
                                 fillOpacity: 0,
                             }
                         }
-                        map.createPane('pane_Microlet9_3');
-                        map.getPane('pane_Microlet9_3').style.zIndex = 403;
-                        map.getPane('pane_Microlet9_3').style['mix-blend-mode'] = 'normal';
-                        var layer_Microlet9_3 = new L.geoJson(json_Microlet9_3, {
+                        map.createPane('pane_9_3');
+                        map.getPane('pane_9_3').style.zIndex = 403;
+                        map.getPane('pane_9_3').style['mix-blend-mode'] = 'normal';
+                        var layer_9_3 = new L.geoJson(json_9_3, {
                             attribution: '<a href=""></a>',
-                            pane: 'pane_Microlet9_3',
-                            onEachFeature: pop_Microlet9_3,
-                            style: style_Microlet9_3_0,
+                            pane: 'pane_9_3',
+                            onEachFeature: pop_9_3,
+                            style: style_9_3_0,
                         });
-                        bounds_group.addLayer(layer_Microlet9_3);
-                        map.addLayer(layer_Microlet9_3);
-                        function pop_Microlet8_4(feature, layer) {
+                        bounds_group.addLayer(layer_9_3);
+                        map.addLayer(layer_9_3);
+                        function pop_8_4(feature, layer) {
                             layer.on({
                                 mouseout: function(e) {
                                     for (i in e.target._eventParents) {
@@ -432,9 +430,9 @@
                             layer.bindPopup(popupContent, {maxHeight: 400});
                         }
 
-                        function style_Microlet8_4_0() {
+                        function style_8_4_0() {
                             return {
-                                pane: 'pane_Microlet8_4',
+                                pane: 'pane_8_4',
                                 opacity: 1,
                                 color: 'rgba(229,229,229,1.0)',
                                 dashArray: '',
@@ -444,18 +442,18 @@
                                 fillOpacity: 0,
                             }
                         }
-                        map.createPane('pane_Microlet8_4');
-                        map.getPane('pane_Microlet8_4').style.zIndex = 404;
-                        map.getPane('pane_Microlet8_4').style['mix-blend-mode'] = 'normal';
-                        var layer_Microlet8_4 = new L.geoJson(json_Microlet8_4, {
+                        map.createPane('pane_8_4');
+                        map.getPane('pane_8_4').style.zIndex = 404;
+                        map.getPane('pane_8_4').style['mix-blend-mode'] = 'normal';
+                        var layer_8_4 = new L.geoJson(json_8_4, {
                             attribution: '<a href=""></a>',
-                            pane: 'pane_Microlet8_4',
-                            onEachFeature: pop_Microlet8_4,
-                            style: style_Microlet8_4_0,
+                            pane: 'pane_8_4',
+                            onEachFeature: pop_8_4,
+                            style: style_8_4_0,
                         });
-                        bounds_group.addLayer(layer_Microlet8_4);
-                        map.addLayer(layer_Microlet8_4);
-                        function pop_Microlet7_5(feature, layer) {
+                        bounds_group.addLayer(layer_8_4);
+                        map.addLayer(layer_8_4);
+                        function pop_7_5(feature, layer) {
                             layer.on({
                                 mouseout: function(e) {
                                     for (i in e.target._eventParents) {
@@ -502,9 +500,9 @@
                             layer.bindPopup(popupContent, {maxHeight: 400});
                         }
 
-                        function style_Microlet7_5_0() {
+                        function style_7_5_0() {
                             return {
-                                pane: 'pane_Microlet7_5',
+                                pane: 'pane_7_5',
                                 opacity: 1,
                                 color: 'rgba(251,100,153,1.0)',
                                 dashArray: '',
@@ -514,18 +512,18 @@
                                 fillOpacity: 0,
                             }
                         }
-                        map.createPane('pane_Microlet7_5');
-                        map.getPane('pane_Microlet7_5').style.zIndex = 405;
-                        map.getPane('pane_Microlet7_5').style['mix-blend-mode'] = 'normal';
-                        var layer_Microlet7_5 = new L.geoJson(json_Microlet7_5, {
+                        map.createPane('pane_7_5');
+                        map.getPane('pane_7_5').style.zIndex = 405;
+                        map.getPane('pane_7_5').style['mix-blend-mode'] = 'normal';
+                        var layer_7_5 = new L.geoJson(json_7_5, {
                             attribution: '<a href=""></a>',
-                            pane: 'pane_Microlet7_5',
-                            onEachFeature: pop_Microlet7_5,
-                            style: style_Microlet7_5_0,
+                            pane: 'pane_7_5',
+                            onEachFeature: pop_7_5,
+                            style: style_7_5_0,
                         });
-                        bounds_group.addLayer(layer_Microlet7_5);
-                        map.addLayer(layer_Microlet7_5);
-                        function pop_Microlet6_6(feature, layer) {
+                        bounds_group.addLayer(layer_7_5);
+                        map.addLayer(layer_7_5);
+                        function pop_6_6(feature, layer) {
                             layer.on({
                                 mouseout: function(e) {
                                     for (i in e.target._eventParents) {
@@ -572,9 +570,9 @@
                             layer.bindPopup(popupContent, {maxHeight: 400});
                         }
 
-                        function style_Microlet6_6_0() {
+                        function style_6_6_0() {
                             return {
-                                pane: 'pane_Microlet6_6',
+                                pane: 'pane_6_6',
                                 opacity: 1,
                                 color: 'rgba(251,115,115,1.0)',
                                 dashArray: '',
@@ -584,18 +582,18 @@
                                 fillOpacity: 0,
                             }
                         }
-                        map.createPane('pane_Microlet6_6');
-                        map.getPane('pane_Microlet6_6').style.zIndex = 406;
-                        map.getPane('pane_Microlet6_6').style['mix-blend-mode'] = 'normal';
-                        var layer_Microlet6_6 = new L.geoJson(json_Microlet6_6, {
+                        map.createPane('pane_6_6');
+                        map.getPane('pane_6_6').style.zIndex = 406;
+                        map.getPane('pane_6_6').style['mix-blend-mode'] = 'normal';
+                        var layer_6_6 = new L.geoJson(json_6_6, {
                             attribution: '<a href=""></a>',
-                            pane: 'pane_Microlet6_6',
-                            onEachFeature: pop_Microlet6_6,
-                            style: style_Microlet6_6_0,
+                            pane: 'pane_6_6',
+                            onEachFeature: pop_6_6,
+                            style: style_6_6_0,
                         });
-                        bounds_group.addLayer(layer_Microlet6_6);
-                        map.addLayer(layer_Microlet6_6);
-                        function pop_Microlet5_7(feature, layer) {
+                        bounds_group.addLayer(layer_6_6);
+                        map.addLayer(layer_6_6);
+                        function pop_5_7(feature, layer) {
                             layer.on({
                                 mouseout: function(e) {
                                     for (i in e.target._eventParents) {
@@ -642,9 +640,9 @@
                             layer.bindPopup(popupContent, {maxHeight: 400});
                         }
 
-                        function style_Microlet5_7_0() {
+                        function style_5_7_0() {
                             return {
-                                pane: 'pane_Microlet5_7',
+                                pane: 'pane_5_7',
                                 opacity: 1,
                                 color: 'rgba(251,177,177,1.0)',
                                 dashArray: '',
@@ -654,18 +652,18 @@
                                 fillOpacity: 0,
                             }
                         }
-                        map.createPane('pane_Microlet5_7');
-                        map.getPane('pane_Microlet5_7').style.zIndex = 407;
-                        map.getPane('pane_Microlet5_7').style['mix-blend-mode'] = 'normal';
-                        var layer_Microlet5_7 = new L.geoJson(json_Microlet5_7, {
+                        map.createPane('pane_5_7');
+                        map.getPane('pane_5_7').style.zIndex = 407;
+                        map.getPane('pane_5_7').style['mix-blend-mode'] = 'normal';
+                        var layer_5_7 = new L.geoJson(json_5_7, {
                             attribution: '<a href=""></a>',
-                            pane: 'pane_Microlet5_7',
-                            onEachFeature: pop_Microlet5_7,
-                            style: style_Microlet5_7_0,
+                            pane: 'pane_5_7',
+                            onEachFeature: pop_5_7,
+                            style: style_5_7_0,
                         });
-                        bounds_group.addLayer(layer_Microlet5_7);
-                        map.addLayer(layer_Microlet5_7);
-                        function pop_Microlet4_8(feature, layer) {
+                        bounds_group.addLayer(layer_5_7);
+                        map.addLayer(layer_5_7);
+                        function pop_4_8(feature, layer) {
                             layer.on({
                                 mouseout: function(e) {
                                     for (i in e.target._eventParents) {
@@ -712,9 +710,9 @@
                             layer.bindPopup(popupContent, {maxHeight: 400});
                         }
 
-                        function style_Microlet4_8_0() {
+                        function style_4_8_0() {
                             return {
-                                pane: 'pane_Microlet4_8',
+                                pane: 'pane_4_8',
                                 opacity: 1,
                                 color: 'rgba(28,110,164,1.0)',
                                 dashArray: '',
@@ -724,18 +722,18 @@
                                 fillOpacity: 0,
                             }
                         }
-                        map.createPane('pane_Microlet4_8');
-                        map.getPane('pane_Microlet4_8').style.zIndex = 408;
-                        map.getPane('pane_Microlet4_8').style['mix-blend-mode'] = 'normal';
-                        var layer_Microlet4_8 = new L.geoJson(json_Microlet4_8, {
+                        map.createPane('pane_4_8');
+                        map.getPane('pane_4_8').style.zIndex = 408;
+                        map.getPane('pane_4_8').style['mix-blend-mode'] = 'normal';
+                        var layer_4_8 = new L.geoJson(json_4_8, {
                             attribution: '<a href=""></a>',
-                            pane: 'pane_Microlet4_8',
-                            onEachFeature: pop_Microlet4_8,
-                            style: style_Microlet4_8_0,
+                            pane: 'pane_4_8',
+                            onEachFeature: pop_4_8,
+                            style: style_4_8_0,
                         });
-                        bounds_group.addLayer(layer_Microlet4_8);
-                        map.addLayer(layer_Microlet4_8);
-                        function pop_Microlet3_9(feature, layer) {
+                        bounds_group.addLayer(layer_4_8);
+                        map.addLayer(layer_4_8);
+                        function pop_3_9(feature, layer) {
                             layer.on({
                                 mouseout: function(e) {
                                     for (i in e.target._eventParents) {
@@ -782,9 +780,9 @@
                             layer.bindPopup(popupContent, {maxHeight: 400});
                         }
 
-                        function style_Microlet3_9_0() {
+                        function style_3_9_0() {
                             return {
-                                pane: 'pane_Microlet3_9',
+                                pane: 'pane_3_9',
                                 opacity: 1,
                                 color: 'rgba(3,251,8,1.0)',
                                 dashArray: '',
@@ -794,18 +792,18 @@
                                 fillOpacity: 0,
                             }
                         }
-                        map.createPane('pane_Microlet3_9');
-                        map.getPane('pane_Microlet3_9').style.zIndex = 409;
-                        map.getPane('pane_Microlet3_9').style['mix-blend-mode'] = 'normal';
-                        var layer_Microlet3_9 = new L.geoJson(json_Microlet3_9, {
+                        map.createPane('pane_3_9');
+                        map.getPane('pane_3_9').style.zIndex = 409;
+                        map.getPane('pane_3_9').style['mix-blend-mode'] = 'normal';
+                        var layer_3_9 = new L.geoJson(json_3_9, {
                             attribution: '<a href=""></a>',
-                            pane: 'pane_Microlet3_9',
-                            onEachFeature: pop_Microlet3_9,
-                            style: style_Microlet3_9_0,
+                            pane: 'pane_3_9',
+                            onEachFeature: pop_3_9,
+                            style: style_3_9_0,
                         });
-                        bounds_group.addLayer(layer_Microlet3_9);
-                        map.addLayer(layer_Microlet3_9);
-                        function pop_Microlet2_10(feature, layer) {
+                        bounds_group.addLayer(layer_3_9);
+                        map.addLayer(layer_3_9);
+                        function pop_2_10(feature, layer) {
                             layer.on({
                                 mouseout: function(e) {
                                     for (i in e.target._eventParents) {
@@ -852,9 +850,9 @@
                             layer.bindPopup(popupContent, {maxHeight: 400});
                         }
 
-                        function style_Microlet2_10_0() {
+                        function style_2_10_0() {
                             return {
-                                pane: 'pane_Microlet2_10',
+                                pane: 'pane_2_10',
                                 opacity: 1,
                                 color: 'rgba(63,160,68,1.0)',
                                 dashArray: '',
@@ -864,18 +862,18 @@
                                 fillOpacity: 0,
                             }
                         }
-                        map.createPane('pane_Microlet2_10');
-                        map.getPane('pane_Microlet2_10').style.zIndex = 410;
-                        map.getPane('pane_Microlet2_10').style['mix-blend-mode'] = 'normal';
-                        var layer_Microlet2_10 = new L.geoJson(json_Microlet2_10, {
+                        map.createPane('pane_2_10');
+                        map.getPane('pane_2_10').style.zIndex = 410;
+                        map.getPane('pane_2_10').style['mix-blend-mode'] = 'normal';
+                        var layer_2_10 = new L.geoJson(json_2_10, {
                             attribution: '<a href=""></a>',
-                            pane: 'pane_Microlet2_10',
-                            onEachFeature: pop_Microlet2_10,
-                            style: style_Microlet2_10_0,
+                            pane: 'pane_2_10',
+                            onEachFeature: pop_2_10,
+                            style: style_2_10_0,
                         });
-                        bounds_group.addLayer(layer_Microlet2_10);
-                        map.addLayer(layer_Microlet2_10);
-                        function pop_Microlet1_11(feature, layer) {
+                        bounds_group.addLayer(layer_2_10);
+                        map.addLayer(layer_2_10);
+                        function pop_1_11(feature, layer) {
                             layer.on({
                                 mouseout: function(e) {
                                     for (i in e.target._eventParents) {
@@ -922,9 +920,9 @@
                             layer.bindPopup(popupContent, {maxHeight: 400});
                         }
 
-                        function style_Microlet1_11_0() {
+                        function style_1_11_0() {
                             return {
-                                pane: 'pane_Microlet1_11',
+                                pane: 'pane_1_11',
                                 opacity: 1,
                                 color: 'rgba(227,26,28,1.0)',
                                 dashArray: '',
@@ -934,17 +932,17 @@
                                 fillOpacity: 0,
                             }
                         }
-                        map.createPane('pane_Microlet1_11');
-                        map.getPane('pane_Microlet1_11').style.zIndex = 411;
-                        map.getPane('pane_Microlet1_11').style['mix-blend-mode'] = 'normal';
-                        var layer_Microlet1_11 = new L.geoJson(json_Microlet1_11, {
+                        map.createPane('pane_1_11');
+                        map.getPane('pane_1_11').style.zIndex = 411;
+                        map.getPane('pane_1_11').style['mix-blend-mode'] = 'normal';
+                        var layer_1_11 = new L.geoJson(json_1_11, {
                             attribution: '<a href=""></a>',
-                            pane: 'pane_Microlet1_11',
-                            onEachFeature: pop_Microlet1_11,
-                            style: style_Microlet1_11_0,
+                            pane: 'pane_1_11',
+                            onEachFeature: pop_1_11,
+                            style: style_1_11_0,
                         });
-                        bounds_group.addLayer(layer_Microlet1_11);
-                        map.addLayer(layer_Microlet1_11);
+                        bounds_group.addLayer(layer_1_11);
+                        map.addLayer(layer_1_11);
                         var osmGeocoder = new L.Control.OSMGeocoder({
                             collapsed: false,
                             position: 'topright',
@@ -952,7 +950,7 @@
                         });
                         osmGeocoder.addTo(map);
                         var baseMaps = {};
-                        L.control.layers(baseMaps,{'<img src="/map/legend/Microlet1_11.png" /> Microlet 1': layer_Microlet1_11,'<img src="/map/legend/Microlet2_10.png" /> Microlet 2': layer_Microlet2_10,'<img src="/map/legend/Microlet3_9.png" /> Microlet 3': layer_Microlet3_9,'<img src="/map/legend/Microlet4_8.png" /> Microlet 4': layer_Microlet4_8,'<img src="/map/legend/Microlet5_7.png" /> Microlet 5': layer_Microlet5_7,'<img src="/map/legend/Microlet6_6.png" /> Microlet 6': layer_Microlet6_6,'<img src="/map/legend/Microlet7_5.png" /> Microlet 7': layer_Microlet7_5,'<img src="/map/legend/Microlet8_4.png" /> Microlet 8': layer_Microlet8_4,'<img src="/map/legend/Microlet9_3.png" /> Microlet 9': layer_Microlet9_3,'<img src="/map/legend/Microlet10_2.png" /> Microlet 10': layer_Microlet10_2,'<img src="/map/legend/Microlet11_1.png" /> Microlet 11': layer_Microlet11_1,'<img src="/map/legend/Microlet12_0.png" /> Microlet 12': layer_Microlet12_0,},{collapsed:false}).addTo(map);
+                        L.control.layers(baseMaps,{'<img src="/map/legend/1_11.png" /> 1': layer_1_11,'<img src="/map/legend/2_10.png" /> 2': layer_2_10,'<img src="/map/legend/3_9.png" /> 3': layer_3_9,'<img src="/map/legend/4_8.png" /> 4': layer_4_8,'<img src="/map/legend/5_7.png" /> 5': layer_5_7,'<img src="/map/legend/6_6.png" /> 6': layer_6_6,'<img src="/map/legend/7_5.png" /> 7': layer_7_5,'<img src="/map/legend/8_4.png" /> 8': layer_8_4,'<img src="/map/legend/9_3.png" /> 9': layer_9_3,'<img src="/map/legend/10_2.png" /> 10': layer_10_2,'<img src="/map/legend/11_1.png" /> 11': layer_11_1,'<img src="/map/legend/12_0.png" /> 12': layer_12_0,},{collapsed:false}).addTo(map);
                         setBounds();
                     </script>
                 </div>
