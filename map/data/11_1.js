@@ -67,9 +67,7 @@ var json_11_1 = {
     },*/
     {
       type: "Feature",
-      properties: {
-        name: "Microlet 11",
-      },
+      properties: { name: "Microlet 11" },
       geometry: {
         type: "LineString",
         coordinates: [
